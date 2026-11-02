@@ -1,0 +1,10 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
