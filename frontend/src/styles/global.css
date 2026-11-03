@@ -1,10 +1,5 @@
 /* ==========================================================================
-   PhishCheck design tokens
-   Orange, amber and pink, taken from the banner: a soft gradient behind every
-   page, white outlined boxes, large light display type. Text that sits on the
-   gradient is near-black or deep brown (6:1 or better on every colour in it);
-   everything inside boxes meets WCAG AA (4.5:1) on white.
-   Chart colours in src/utils/theme.js mirror these values.
+   PhishCheck design settings
    ========================================================================== */
 :root {
   --color-bg: #fffaf2;
