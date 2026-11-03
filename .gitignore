@@ -1,10 +1,12 @@
-# Environment files
-.env
-.env.*
-!.env.example
+# Working copy of the Assignment 2 pipeline and its downloaded datasets (hundreds of MB).
+assignment2-pipeline/
 
-# Editor and operating system files
-.idea/
+# Archives and documents that are not part of the code.
+*.zip
+*.pdf
+
+# Local editor and assistant settings.
+.claude/
+.vscode/
 .DS_Store
 Thumbs.db
-*.swp
