@@ -1,0 +1,32 @@
+{
+  "undefended: plain joblib.load of the tampered file": {
+    "outcome": "loaded",
+    "model_works": true,
+    "hidden_code_ran": true
+  },
+  "defended: tampered file, real MODEL_SHA256": {
+    "outcome": "refused: Model file hash does not match MODEL_SHA256 (expected 04b478c5fd5e..., got bd2642cc847c...). Refusing to load it: the file may have been tampered with or replaced.",
+    "model_works": false,
+    "hidden_code_ran": false
+  },
+  "defended: tampered file, MODEL_SHA256 left empty": {
+    "outcome": "refused: MODEL_SHA256 is not set, so the model cannot be verified and will not be loaded. Run \"python -m scripts.hash_model\" and put the hash in backend/.env.",
+    "model_works": false,
+    "hidden_code_ran": false
+  },
+  "defended: tampered file, hash shortened to 12 characters": {
+    "outcome": "refused: MODEL_SHA256 must be the full 64-character hexadecimal SHA-256 of the model file.",
+    "model_works": false,
+    "hidden_code_ran": false
+  },
+  "limit: attacker can also set MODEL_SHA256 to the tampered file's hash": {
+    "outcome": "loaded",
+    "model_works": true,
+    "hidden_code_ran": true
+  },
+  "defended: genuine model (no attack)": {
+    "outcome": "loaded",
+    "model_works": true,
+    "hidden_code_ran": false
+  }
+}

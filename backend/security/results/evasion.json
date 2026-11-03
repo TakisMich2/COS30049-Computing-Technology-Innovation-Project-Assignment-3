@@ -1,0 +1,56 @@
+{
+  "dataset": "..\\assignment2-pipeline\\data\\combined_data\\training_table.csv",
+  "phishing_sampled": 2000,
+  "phishing_detected": 1913,
+  "benign_sampled": 2000,
+  "attacks": [
+    {
+      "attack": "homoglyph_host_3",
+      "description": "Swap up to 3 hostname letters for Cyrillic look-alikes.",
+      "urls": 1870,
+      "evasion_before": 0.0203,
+      "evasion_after": 0.0
+    },
+    {
+      "attack": "homoglyph_everywhere",
+      "description": "Swap every swappable letter in the whole URL.",
+      "urls": 1913,
+      "evasion_before": 0.3142,
+      "evasion_after": 0.0
+    },
+    {
+      "attack": "fullwidth_host",
+      "description": "Write the hostname in full-width characters.",
+      "urls": 1913,
+      "evasion_before": 0.1683,
+      "evasion_after": 0.0
+    },
+    {
+      "attack": "zero_width",
+      "description": "Insert a zero-width space after every third character.",
+      "urls": 1913,
+      "evasion_before": 0.0298,
+      "evasion_after": 0.0
+    },
+    {
+      "attack": "punycode_homoglyph_host",
+      "description": "Look-alike hostname written in its punycode (xn--) form.",
+      "urls": 1870,
+      "evasion_before": 0.0246,
+      "evasion_after": 0.0
+    },
+    {
+      "attack": "percent_encoded_host",
+      "description": "Percent-encode every hostname letter.",
+      "urls": 1871,
+      "evasion_before": 0.0187,
+      "evasion_after": 0.0
+    }
+  ],
+  "unmodified": {
+    "detection_before": 0.9565,
+    "detection_after": 0.957,
+    "false_positive_before": 0.0,
+    "false_positive_after": 0.0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "label": "defended",
+  "expensive": {
+    "expensive_request": {
+      "size_mb": 5,
+      "status": 413,
+      "time_ms": 37.0
+    },
+    "normal_user_latency": {
+      "count": 9,
+      "median_ms": 15.3,
+      "p95_ms": 16.3,
+      "max_ms": 62.5
+    }
+  },
+  "flood": {
+    "requests": 300,
+    "outcomes": {
+      "200": 13,
+      "503": 287
+    },
+    "total_time_ms": 4434.7,
+    "request_latency": {
+      "count": 300,
+      "median_ms": 1180.4,
+      "p95_ms": 2746.9,
+      "max_ms": 3149.4
+    },
+    "health_latency_during_flood": {
+      "count": 20,
+      "median_ms": 10.7,
+      "p95_ms": 345.2,
+      "max_ms": 2168.1
+    }
+  }
+}
